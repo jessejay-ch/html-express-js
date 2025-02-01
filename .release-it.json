@@ -1,0 +1,15 @@
+{
+  "git": {
+    "commitMessage": "${version}",
+    "tagName": "v${version}"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "${version}"
+  },
+  "hooks": {
+    "before:init": ["npm test"],
+    "before:bump": "npm run build",
+    "after:npm:release": "rm src/index.d.ts"
+  }
+}

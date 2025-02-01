@@ -5,3 +5,5 @@ LICENSE
 .gitignore
 .npmrc
 .prettierignore
+.nvmrc
+src/index.d.ts
